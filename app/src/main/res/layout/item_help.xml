@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginStart="12dp"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical"
+    app:cardCornerRadius="0dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/image_iv"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                app:placeholderImage="@mipmap/test"
+                app:placeholderImageScaleType="centerCrop"/>
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:lineSpacingExtra="6dp"
+                android:padding="12dp"
+                android:text="{fa-quote-left} 谁能帮帮我救救子然\n谁能帮帮我救救子然"
+                android:textColor="@color/black"
+                android:textSize="22sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/subscribe_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_grey_400"
+                android:textSize="@dimen/text_size_small"/>
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="{fa-users}"
+                android:textColor="@color/md_grey_400"
+                android:textSize="@dimen/text_size_small"/>
+
+            <TextView
+                android:id="@+id/pv_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/md_grey_400"
+                android:textSize="@dimen/text_size_small"/>
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="{fa-heart-o}"
+                android:textColor="@color/md_grey_400"
+                android:textSize="@dimen/text_size_small"/>
+
+            <TextView
+                android:id="@+id/comment_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/md_grey_400"
+                android:textSize="@dimen/text_size_small"/>
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="{fa-commenting-o}"
+                android:textColor="@color/md_grey_400"
+                android:textSize="@dimen/text_size_small"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/host_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="154dp"
+            android:layout_gravity="right"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/host_avatar_iv"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:actualImageScaleType="centerCrop"
+                app:placeholderImage="@mipmap/test"
+                app:roundAsCircle="true"
+                app:roundingBorderColor="@color/white"
+                app:roundingBorderWidth="1dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/host_nickname_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Host name"
+                    android:textColor="@color/md_orange_600"/>
+
+                <TextView
+                    android:id="@+id/host_intro_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Host name"
+                    android:textSize="@dimen/text_size_micro"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>
