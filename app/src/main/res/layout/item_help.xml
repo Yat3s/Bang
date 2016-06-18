@@ -13,7 +13,8 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:paddingBottom="12dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,9 +30,9 @@
 
             <com.joanzapata.iconify.widget.IconTextView
                 android:id="@+id/title_tv"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
+                android:layout_marginStart="64dp"
                 android:lineSpacingExtra="6dp"
                 android:padding="12dp"
                 android:text="{fa-quote-left} 谁能帮帮我救救子然\n谁能帮帮我救救子然"
@@ -107,9 +108,8 @@
             android:id="@+id/host_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="154dp"
-            android:layout_gravity="right"
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
@@ -126,6 +126,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <TextView

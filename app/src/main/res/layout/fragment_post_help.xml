@@ -1,22 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     android:padding="12dp">
 
     <EditText
+        android:id="@+id/title_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Your help title"/>
 
     <EditText
+        android:id="@+id/description_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:lines="5"
         android:gravity="bottom"
-        android:hint="Your help description"/>
+        android:hint="Your help description"
+        android:lines="5"/>
+
+    <FrameLayout
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape_round_border_grey"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/upload_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:actualImageScaleType="centerCrop"
+            app:placeholderImageScaleType="fitCenter"/>
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/plus_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="{fa-plus}"
+            android:textColor="@color/md_grey_200"
+            android:textSize="34sp"/>
+    </FrameLayout>
+
 
     <Button
         android:id="@+id/post_btn"

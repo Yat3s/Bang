@@ -52,6 +52,7 @@
         </activity>
 
         <activity android:name=".module.auth.AuthActivity"/>
+        <activity android:name=".module.help.PostHelpDialogActivity"/>
     </application>
 
 </manifest>
