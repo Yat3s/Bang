@@ -22,9 +22,12 @@ public class HelpAdapter extends BaseAdapter<HelpModel> {
     @Override
     protected void bindDataToItemView(BaseViewHolder holder, HelpModel data, int position) {
         holder.setImageURI(R.id.image_iv, Uri.parse(data.image))
-                .setText(R.id.title_tv, data.title)
-                .setText(R.id.host_nickname_tv, data.host.nickname)
-                .setImageURI(R.id.host_avatar_iv, Uri.parse(data.host.avatar));
+                .setText(R.id.title_tv, "{fa-quote-left}" + data.title)
+                .setText(R.id.host_nickname_tv, data.host.nickname);
+
+        if (null != data.host.avatar) {
+            holder.setImageURI(R.id.host_avatar_iv, Uri.parse(data.host.avatar));
+        }
     }
 
     @Override

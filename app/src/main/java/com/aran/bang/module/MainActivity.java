@@ -10,8 +10,10 @@ import com.aran.bang.R;
 import com.aran.bang.base.BaseActivity;
 import com.aran.bang.module.auth.AuthActivity;
 import com.aran.bang.module.contact.ContactFragment;
+import com.aran.bang.module.feed.FeedFragment;
 import com.aran.bang.module.help.HelpFragment;
 import com.aran.bang.module.inbox.InboxFragment;
+import com.aran.bang.module.setting.ProfileFragment;
 import com.aran.bang.module.setting.SettingFragment;
 import com.gigamole.library.NavigationTabBar;
 
@@ -66,7 +68,7 @@ public class MainActivity extends BaseActivity {
         mFragments.add(HelpFragment.newInstance());
         mFragments.add(InboxFragment.newInstance());
         mFragments.add(ContactFragment.newInstance());
-        mFragments.add(SettingFragment.newInstance());
+        mFragments.add(ProfileFragment.newInstance("ss"));
 
         contentVp.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
@@ -100,6 +102,11 @@ public class MainActivity extends BaseActivity {
         }
 
         navigationTab.setModels(models);
+        navigationTab.setBackgroundResource(R.color.md_blue_grey_100);
+        navigationTab.setIsTitled(false);
+        navigationTab.setActiveColor(getResources().getColor(R.color.white));
+        navigationTab.setInactiveColor(getResources().getColor(R.color.black));
+
         navigationTab.setViewPager(contentVp, 0);
     }
 

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/logo_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="42sp"
+        android:textColor="@color/text_grey"
+        android:text="{fa-github-alt}"/>
+
+    <com.aran.bang.widget.ContentTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/text_size_large"
+        android:text="BANG"/>
+
+    <com.aran.bang.widget.ContentTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:textSize="@dimen/text_size_large"
+        android:text="特别感谢"/>
+
+    <com.aran.bang.widget.ContentTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/color2"
+        android:text="CCTV"/>
+
+    <com.aran.bang.widget.ContentTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/color4"
+        android:text="凤凰卫视"/>
+
+    <com.aran.bang.widget.ContentTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/color3"
+        android:text="Yat3s"/>
+
+    <com.aran.bang.widget.ContentTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="联系BANG"/>
+
+    <com.aran.bang.widget.ContentTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_grey_400"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/text_size_small"
+        android:lineSpacingExtra="4dp"
+        android:text="如果你想与我们合作，或者任何相关版权的疑问，请写邮件与我们取得联系"/>
+
+    <com.aran.bang.widget.ContentTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_grey_400"
+        android:layout_marginTop="4dp"
+        android:textSize="@dimen/text_size_small"
+        android:lineSpacingExtra="4dp"
+        android:text="support@bang.com"/>
+
+</LinearLayout>

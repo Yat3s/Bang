@@ -7,14 +7,14 @@
     android:layout_marginBottom="12dp"
     android:layout_marginEnd="12dp"
     android:layout_marginStart="12dp"
+    android:layout_marginTop="12dp"
     android:background="@color/md_white_1000"
     android:orientation="vertical"
     app:cardCornerRadius="0dp">
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingBottom="12dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,77 +32,81 @@
                 android:id="@+id/title_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="64dp"
+                android:layout_marginStart="88dp"
                 android:lineSpacingExtra="6dp"
                 android:padding="12dp"
                 android:text="{fa-quote-left} 谁能帮帮我救救子然\n谁能帮帮我救救子然"
                 android:textColor="@color/black"
                 android:textSize="22sp"/>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/subscribe_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="71"
+                    android:textColor="@color/md_grey_400"
+                    android:textSize="@dimen/text_size_small"/>
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="{fa-users}"
+                    android:textColor="@color/md_grey_400"
+                    android:textSize="@dimen/text_size_small"/>
+
+                <TextView
+                    android:id="@+id/pv_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="13"
+                    android:textColor="@color/md_grey_400"
+                    android:textSize="@dimen/text_size_small"/>
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="{fa-heart-o}"
+                    android:textColor="@color/md_grey_400"
+                    android:textSize="@dimen/text_size_small"/>
+
+                <TextView
+                    android:id="@+id/comment_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="33"
+                    android:textColor="@color/md_grey_400"
+                    android:textSize="@dimen/text_size_small"/>
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="{fa-commenting-o}"
+                    android:textColor="@color/md_grey_400"
+                    android:textSize="@dimen/text_size_small"/>
+
+            </LinearLayout>
+
         </LinearLayout>
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:gravity="center_vertical"
-            android:padding="8dp">
-
-
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:id="@+id/subscribe_tv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/md_grey_400"
-                android:textSize="@dimen/text_size_small"/>
-
-            <com.joanzapata.iconify.widget.IconTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:text="{fa-users}"
-                android:textColor="@color/md_grey_400"
-                android:textSize="@dimen/text_size_small"/>
-
-            <TextView
-                android:id="@+id/pv_tv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:textColor="@color/md_grey_400"
-                android:textSize="@dimen/text_size_small"/>
-
-            <com.joanzapata.iconify.widget.IconTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:text="{fa-heart-o}"
-                android:textColor="@color/md_grey_400"
-                android:textSize="@dimen/text_size_small"/>
-
-            <TextView
-                android:id="@+id/comment_tv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:textColor="@color/md_grey_400"
-                android:textSize="@dimen/text_size_small"/>
-
-            <com.joanzapata.iconify.widget.IconTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:text="{fa-commenting-o}"
-                android:textColor="@color/md_grey_400"
-                android:textSize="@dimen/text_size_small"/>
-
-        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/host_layout"
@@ -126,6 +130,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -141,7 +146,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:text="Host name"
+                    android:text="一个爱笑的女孩"
                     android:textSize="@dimen/text_size_micro"/>
             </LinearLayout>
 
